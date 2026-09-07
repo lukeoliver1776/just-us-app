@@ -1,0 +1,23 @@
+Priority,As a…,I want to…,So that…
+1,User,Create an account,I can access the platform
+1,User,Log in with my credentials,I can access my room and stats
+1,User,Create a couples room,My significant other and I have a persistent shared space
+1,User,Invite my significant other via a link,So we can pair our permanent room
+1,Room Member,Launch a game from my room,My significant other and I can play games together
+1,Room Member,See real time game state updates,Gameplay feels responsive and synced
+2,User,Update my creds,I can keep my account secure
+2,Room Member,Reconnect to a room after disconnect with a grace period,A dropped connection doesn’t end the game or lock me out
+2,Guest,Join a game with a temporary display name,I can play without creating an account
+2,Room Member,Regenerate my rooms invite link,I can revoke access if it was shared with someone else
+3,User,Customie my profile avatar or photo,My identity feels personal
+3,Room Member,See per room stats,My significant other and I can track our shared game history
+3,User,See my individual stats,I can track my own game performance
+3,Room Member,Select a couples exclusive theme,Our room feels unique and personable to us
+3,User,"Choose light, dark, system, or custom theming",The platform matches my perference
+4,User,Play against a bot with selectable diffuclties,I can practice solo or play when my significant other is unavailable
+4,User,See how many free games I have left,I can understand the free limit
+4,Room Member,Have only one of us need a subscription,We aren’t double charged
+5,User,See a couple versus couple leaderboard,We can see how we rank against other couples
+5,User,Earn badges and milestones,Progress feels rewarding
+5,Admin,Monitor live games and errors on a dashboard,I can maintain health of the application
+5,Admin,Review periodic capacity audits,I can plan for scaling
