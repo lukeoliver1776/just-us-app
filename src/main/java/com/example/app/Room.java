@@ -31,6 +31,7 @@ public class Room {
      * @return the first player's name
      */
     public String getPlayerOneName() {
+      return playerOneName;
     }
   
     /**
@@ -39,5 +40,6 @@ public class Room {
      * @return the second player's name
      */
     public String getPlayerTwoName() {
+      return playerTwoName;
     }
 }
