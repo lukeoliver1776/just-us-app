@@ -16,10 +16,10 @@ public class Room {
    */
   public Room(String playerOneName, String playerTwoName) {
     if (playerOneName == null || playerOneName.isBlank()) {
-      throw new IllegalArgumentException("Player one name cannot be null or blank.");
+      throw new IllegalArgumentException("Player one's name cannot be null or blank.");
     }
     if (playerTwoName == null || playerTwoName.isBlank()) {
-      throw new IllegalArgumentException("Player two name cannot be null or blank.");
+      throw new IllegalArgumentException("Player two's name cannot be null or blank.");
     }
     this.playerOneName = playerOneName;
     this.playerTwoName = playerTwoName;
