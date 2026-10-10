@@ -40,4 +40,15 @@ public class GamePageCodeBehind {
 
   @FXML
   private Button cell22;
+
+  private Room room;
+
+  /**
+   * Sets the page where the two players play.
+   *
+   * @param room the room holding the player names
+   */
+  public void setRoom(Room room) {
+    this.room = room;
+  }
 }
