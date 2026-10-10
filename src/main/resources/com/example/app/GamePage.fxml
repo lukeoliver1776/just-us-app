@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.app.GamePageCodeBehind">
+  <padding>
+    <Insets top="20" right="20" bottom="20" left="20"/>
+  </padding>
+  <Button fx:id="backButton" text="Back"/>
+  <Label fx:id="statusLabel" text="Player X's turn"/>
+  <GridPane alignment="CENTER" hgap="5" vgap="5">
+    <Button fx:id="cell00" prefWidth="60" prefHeight="60"
+            GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <Button fx:id="cell01" prefWidth="60" prefHeight="60"
+            GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <Button fx:id="cell02" prefWidth="60" prefHeight="60"
+            GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+    <Button fx:id="cell10" prefWidth="60" prefHeight="60"
+            GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <Button fx:id="cell11" prefWidth="60" prefHeight="60"
+            GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Button fx:id="cell12" prefWidth="60" prefHeight="60"
+            GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+    <Button fx:id="cell20" prefWidth="60" prefHeight="60"
+            GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <Button fx:id="cell21" prefWidth="60" prefHeight="60"
+            GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Button fx:id="cell22" prefWidth="60" prefHeight="60"
+            GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+  </GridPane>
+</VBox>
