@@ -17,5 +17,5 @@
   <Label text="Player two's name:"/>
   <TextField fx:id="playerTwoField"/>
   <Label fx:id="errorLabel"/>
-  <Button fx:id="startGameButton" text="Start Game"/>
+  <Button fx:id="startGameButton" text="Start Game" onAction="#handleStartGame"/>
 </VBox>
