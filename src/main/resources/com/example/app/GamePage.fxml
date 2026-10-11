@@ -11,7 +11,7 @@
   <padding>
     <Insets top="20" right="20" bottom="20" left="20"/>
   </padding>
-  <Button fx:id="backButton" text="Back"/>
+  <Button fx:id="backButton" text="Back" onAction="#handleBack"/>
   <Label fx:id="statusLabel" text="Player X's turn"/>
   <GridPane alignment="CENTER" hgap="5" vgap="5">
     <Button prefWidth="60" prefHeight="60" onAction="#handleCellClick"

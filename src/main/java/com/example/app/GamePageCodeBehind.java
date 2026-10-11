@@ -1,10 +1,15 @@
 package com.example.app;
 
+import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 /**
  * Code behind for the game page. It connects the pages controls to the code.
@@ -43,5 +48,12 @@ public class GamePageCodeBehind {
 
     clicked.setText(String.valueOf(game.getMarkAt(row, col)));
     statusLabel.setText(game.getStatusMessage(room));
+  }
+
+  @FXML
+  private void handleBack() throws IOException {
+    Parent root = FXMLLoader.load(getClass().getResource("RoomPage.fxml"));
+    Stage stage = (Stage) backButton.getScene().getWindow();
+    stage.setScene(new Scene(root, 400, 300));
   }
 }
