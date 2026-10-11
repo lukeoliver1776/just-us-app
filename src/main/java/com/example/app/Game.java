@@ -107,10 +107,33 @@ public class Game {
     return winner != EMPTY || movesMade == SIZE * SIZE;
   }
 
+  /**
+   * Describes the current state of the game using the players names.
+   *
+   * @param room the room holding the two players names
+   * @return a message saying who won, whether it is a draw, or whose turn it is
+   */
+  public String getStatusMessage(Room room) {
+    if (winner != EMPTY) {
+      return nameFor(room, winner) + " wins!";
+    }
+    if (isDraw()) {
+      return "It's a draw!";
+    }
+    return nameFor(room, currentPlayer) + "'s turn (" + currentPlayer + ")";
+  }
+
   private void checkInBounds(int row, int col) {
     if (row < 0 || row >= SIZE || col < 0 || col >= SIZE) {
       throw new IllegalArgumentException("Row and column must be between 0 and 2.");
     }
+  }
+
+  private String nameFor(Room room, char mark) {
+    if (mark == PLAYER_ONE_MARK) {
+      return room.getPlayerOneName();
+    }
+    return room.getPlayerTwoName();
   }
 
   private boolean hasWon(char mark) {
