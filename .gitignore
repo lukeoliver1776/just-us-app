@@ -10,3 +10,5 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 .mvn/wrapper/maven-wrapper.properties
 .DS_Store
+code/login-app/node_modules/
+code/login-app/users.db
